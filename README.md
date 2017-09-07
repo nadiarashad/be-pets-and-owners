@@ -42,9 +42,9 @@ Just rename the file you used for hello world to helloworld.js and create a new 
 
 This sprint will help you get used to express as well as recap over the use of the file system module. A common architectural pattern is known as MVC where we split each type of job into three sections:
 
-    *Model*: represents the different data in used by your application and handles the interactions with the database (in this case, we are using files to represent a database).
-    *View*: is in charge of what to render/show to the user and using the data it is passed to create everything needed on the screen. For now, we are unconcerned with this.
-    *Controller*: is like the manager. The controller function is a function that is designed to handle a specific task. It works with the model to handle any of the necessary changes to the data and will then collect up everything needed and will respond using the relevant view or data.
+* *Model*: represents the different data in used by your application and handles the interactions with the database (in this case, we are using files to represent a database).
+* *View*: is in charge of what to render/show to the user and using the data it is passed to create everything needed on the screen. For now, we are unconcerned with this.
+* *Controller*: is like the manager. The controller function is a function that is designed to handle a specific task. It works with the model to handle any of the necessary changes to the data and will then collect up everything needed and will respond using the relevant view or data.
 
 Here's a nice article to help with your understanding of this pattern:
 [MVC Bar analogy](https://medium.freecodecamp.org/model-view-controller-mvc-explained-through-ordering-drinks-at-the-bar-efcba6255053)
