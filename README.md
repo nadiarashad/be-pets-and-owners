@@ -62,23 +62,23 @@ Create the routes (think about structuring them in the relevant way). For each r
 All of these routes should start with `/api/` as we are creating an API.
 
 1. GET:
-    a. all owners
-    b. an owner using their id
-    c. all pets belonging to an owner
-    d. a single pet using their id
+    * all owners
+    * an owner using their id
+    * all pets belonging to an owner
+    * a single pet using their id
 
 2. PATCH:
-    a. ability to update owners name and age /owners/:id
+    * ability to update owners name and age /owners/:id
 
 3. POST (don't forget to add bodyparser and to send the data in json format):
-    a. add an owner 
-        1. Must be same format as others, you should check this
+    * add an owner 
+        1. Must be same format (contain the same information), you should check the other owner files for this.
         2. Use a timestamp for the id, affixed with the relevant letter, o or p
-    b. add a pet to an owner (owner must exist) - /owners/:id/pets
+    * add a pet to an owner (owner must exist) - /owners/:id/pets
 
 4. DELETE:
-    a. delete a pet
-    b. delete an owner (and therefore any of their pets)
+    * delete a pet
+    * delete an owner (and therefore any of their pets)
 
 5. Read about [Error Handling](http://expressjs.com/en/guide/error-handling.html).
 
