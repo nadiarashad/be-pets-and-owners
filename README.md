@@ -36,7 +36,7 @@ For now, do not worry about testing!
 
 ## Before
 
-Just rename the file you used for hello world to helloworld.js and create a new index.js file for this part.
+Just rename the file you used for hello world to `helloworld.js` and create a new `app.js` and `listen.js` file for this part.
 
 ## Intro
 
