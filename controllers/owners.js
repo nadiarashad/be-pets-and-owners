@@ -1,0 +1,1 @@
+const { create, fetchAll, fetchById, update, deleteById } = require('../models/owners.js');

@@ -1,0 +1,1 @@
+const { create, fetchById, fetchByOwnerId, deleteById, } = require('../models/pets.js');
