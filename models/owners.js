@@ -1,11 +1,17 @@
-const create = (data, cb) => {};
+const createOwner = (data, cb) => {};
 
-const fetchAll = cb => {};
+const fetchAllOwners = (cb) => {};
 
-const fetchById = (id, cb) => {};
+const fetchOwnerById = (id, cb) => {};
 
-const update = (id, data, cb) => {};
+const updateOwner = (id, data, cb) => {};
 
-const deleteById = (id, cb) => {};
+const deleteOwnerById = (id, cb) => {};
 
-module.exports = { create, fetchAll, fetchById, update, deleteById };
+module.exports = {
+  createOwner,
+  fetchAllOwners,
+  fetchOwnerById,
+  updateOwner,
+  deleteOwnerById,
+};

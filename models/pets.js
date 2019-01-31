@@ -1,11 +1,16 @@
-const create = (ownerId, data, cb) => {};
+const createPet = (ownerId, data, cb) => {};
 
-const fetchById = (id, cb) => {};
+const fetchPetById = (id, cb) => {};
 
-const fetchByOwnerId = (ownerId, cb) => {
+const fetchPetsByOwnerId = (ownerId, cb) => {
   // Get all pets and filter only pets belonging to owner
 };
 
-const deleteById = (id, cb) => {};
+const deletePetById = (id, cb) => {};
 
-module.exports = { create, fetchById, fetchByOwnerId, deleteById };
+module.exports = {
+  createPet,
+  fetchPetById,
+  fetchPetsByOwnerId,
+  deletePetById,
+};
