@@ -1,17 +1,11 @@
-module.exports = {
-    create (data, cb) {
-      
-    },
-    fetchAll (cb) {
-       
-    },
-    fetchById (id, cb) {
-        
-    },
-    update (id, data, cb) {
+const create = (data, cb) => {};
 
-    },
-    deleteById (id, cb) {
+const fetchAll = cb => {};
 
-    }
-};
+const fetchById = (id, cb) => {};
+
+const update = (id, data, cb) => {};
+
+const deleteById = (id, cb) => {};
+
+module.exports = { create, fetchAll, fetchById, update, deleteById };
