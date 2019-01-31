@@ -18,7 +18,7 @@
 
 For now, do not worry about testing!
 
-1. Repeat the 'Hello World' example from this mornings lecture
+1. Repeat the 'Hello World' example from this mornings lecture (note: you'll need to initialise your project first!)
 2. Create a route for each type of request and send a text response. Here are some [examples](https://expressjs.com/en/starter/basic-routing.html)
     - GET
     - POST
@@ -74,8 +74,8 @@ All of these routes should start with `/api/` as we are creating an API. Make th
 
 3. POST (don't forget to add bodyparser and to send the data in json format):
     * add an owner 
-        1. Must be same format (contain the same information), you should check the other owner files for this.
-        2. Use a timestamp for the id, affixed with the relevant letter, o or p
+      - Must be same format (contain the same information), you should check the other owner files for this.
+      - Use a timestamp for the id, affixed with the relevant letter, o or p
     * add a pet to an owner (owner must exist) - /owners/:id/pets
 
 4. DELETE:
