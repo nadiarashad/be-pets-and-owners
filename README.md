@@ -6,7 +6,7 @@
 
 ### Tools
 
-1. [Postman](https://www.getpostman.com/) to test your requests
+1. [Insomnia](https://insomnia.rest/download/) to test your requests
 
 ### Objectives
 1. Learn how to get a simple web server up and running using express.
