@@ -69,10 +69,10 @@ All of these routes should start with `/api/` as we are creating an API. Make th
     * all pets belonging to an owner
     * a single pet using their id
 
-2. PATCH:
+2. PATCH (don't forget to use `express.json()` to access the request body!):
     * ability to update owners name and age /owners/:id
 
-3. POST (don't forget to add bodyparser and to send the data in json format):
+3. POST (don't forget to use `express.json()` to access the request body!):
     * add an owner 
       - Must be same format (contain the same information), you should check the other owner files for this.
       - Use a timestamp for the id, affixed with the relevant letter, o or p
