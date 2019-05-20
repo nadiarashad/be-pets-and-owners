@@ -1,7 +1,5 @@
 # Pets and Owners
 
-## Part 1 (Day 1 Morning)
-
 [Express.js](http://expressjs.com/) is a web application framework for Node.js. It is designed for building web applications and APIs.
 
 ### Tools
@@ -13,30 +11,6 @@
 2. Learn handling simple GET requests on your server.
 3. Learn to read queries from the request your sever receives
 3. Build your own static web page server.
-
-### Tasks:
-
-For now, do not worry about testing!
-
-1. Repeat the 'Hello World' example from this mornings lecture (note: you'll need to initialise your project first!)
-2. Create a route for each type of request and send a text response. Here are some [examples](https://expressjs.com/en/starter/basic-routing.html)
-    - GET
-    - POST
-    - PUT
-    - DELETE
-3. Make each of your routes you created above handle a query and use that query in your response
-    e.g:
-    ```
-    http://localhost:3000/my-route?name=Northcoders
-    -->
-    Got a PUT request on my-route with a name query which was Northcoders
-    ```
-
-## Part 2 (Day 1 afternoon + Day 2)
-
-## Before
-
-Just rename the file you used for hello world to `helloworld.js` and create a new `app.js` and `listen.js` file for this part.
 
 ## Intro
 
