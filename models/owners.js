@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const createOwner = (data, cb) => {};
+const createOwner = (data, cb) => { };
 
 const fetchAllOwners = cb => {
   fs.readdir("./data/owners", (err, owners) => {
@@ -20,11 +20,14 @@ const fetchAllOwners = cb => {
   });
 };
 
-const fetchOwnerById = (id, cb) => {};
+// const fetchOwnerById = (id, cb) => {
 
-const updateOwner = (id, data, cb) => {};
 
-const deleteOwnerById = (id, cb) => {};
+// };
+
+const updateOwner = (id, data, cb) => { };
+
+const deleteOwnerById = (id, cb) => { };
 
 module.exports = {
   createOwner,

@@ -13,4 +13,14 @@ const allOwners = (request, response) => {
   });
 };
 
-module.exports = { allOwners };
+const ownersById = (request, response) => {
+  fetchAllOwners((err, ownerArray) => {
+
+    const requestedOwner = ownerArray.find(owner => owner.id === request.params.id)
+    const body = { owner: requestedOwner }
+    response.send(body)
+  })
+}
+
+
+module.exports = { allOwners, ownersById };
