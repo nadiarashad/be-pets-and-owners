@@ -20,10 +20,10 @@ const fetchAllOwners = cb => {
   });
 };
 
-// const fetchOwnerById = (id, cb) => {
+const fetchOwnerById = (id, cb) => {
 
 
-// };
+};
 
 const updateOwner = (id, data, cb) => { };
 
