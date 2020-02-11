@@ -1,12 +1,23 @@
 const fs = require("fs");
 
-const createPet = (ownerId, data, cb) => {};
+const createPet = (ownerId, data, cb) => { };
 
-const fetchPetById = (id, cb) => {};
+const fetchPetById = (id, cb) => { };
 
 const fetchPetsByOwnerId = (ownerId, cb) => {
-  //split
 
+
+
+  fetchAllPets((err, petArray) => {
+    const findPets = petArray.filter(pet => pet.owner === ownerId);
+    cb(null, findPets)
+  })
+
+
+
+};
+
+const fetchAllPets = cb => {
   fs.readdir("./data/pets", (err, pets) => {
     const petArray = [];
     if (err) cb(err);
@@ -16,19 +27,16 @@ const fetchPetsByOwnerId = (ownerId, cb) => {
           const parsedPet = JSON.parse(pet);
           petArray.push(parsedPet);
           if (petArray.length === pets.length) {
-            const findPets = petArray.filter(pet => pet.owner === ownerId);
-            console.log(findPets);
-            cb(null, findPets);
+            cb(null, petArray);
           }
         });
       }
     }
   });
 
-  // Get all pets and filter only pets belonging to owner
-};
+}
 
-const deletePetById = (id, cb) => {};
+const deletePetById = (id, cb) => { };
 
 module.exports = {
   createPet,

@@ -13,12 +13,11 @@ const allOwners = (request, response) => {
   });
 };
 
-const ownersById = (request, response) => {
-  fetchAllOwners((err, ownerArray) => {
+const ownersById = (req, res) => {
 
-    const requestedOwner = ownerArray.find(owner => owner.id === request.params.id)
+  fetchOwnerById(req.params.id, (err, requestedOwner) => {
     const body = { owner: requestedOwner }
-    response.send(body)
+    res.send(body)
   })
 }
 

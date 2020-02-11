@@ -21,8 +21,11 @@ const fetchAllOwners = cb => {
 };
 
 const fetchOwnerById = (id, cb) => {
+  fetchAllOwners((err, ownerArray) => {
 
-
+    const requestedOwner = ownerArray.find(owner => owner.id === id)
+    cb(null, requestedOwner)
+  })
 };
 
 const updateOwner = (id, data, cb) => { };
