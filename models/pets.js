@@ -4,7 +4,7 @@ const createPet = (ownerId, data, cb) => {};
 
 const fetchPetById = (id, cb) => {};
 
-const fetchPetsByOwnerId = cb => {
+const fetchPetsByOwnerId = (ownerId, cb) => {
   //split
 
   fs.readdir("./data/pets", (err, pets) => {
@@ -16,7 +16,9 @@ const fetchPetsByOwnerId = cb => {
           const parsedPet = JSON.parse(pet);
           petArray.push(parsedPet);
           if (petArray.length === pets.length) {
-            cb(null, petArray);
+            const findPets = petArray.filter(pet => pet.owner === ownerId);
+            console.log(findPets);
+            cb(null, findPets);
           }
         });
       }
