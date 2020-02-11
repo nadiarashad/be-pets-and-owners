@@ -5,13 +5,15 @@ const {
   deletePetById
 } = require("../models/pets.js");
 
-const allOwnedPets = (req, res) => {
+const allOwnedPets = (req, res, next) => {
   // console.log(req.params);
 
   fetchPetsByOwnerId(req.params.owner, (err, findPets) => {
-    // const findPets = petArray.filter(pet => pet.owner === req.params.owner);
-    const body = { Pets: findPets };
-    res.send(body);
+    if (err) next(err)
+    else {
+      const body = { Pets: findPets };
+      res.send(body);
+    }
   });
 };
 
