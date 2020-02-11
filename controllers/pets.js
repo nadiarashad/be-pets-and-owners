@@ -2,12 +2,17 @@ const {
   createPet,
   fetchPetById,
   fetchPetsByOwnerId,
-  deletePetById,
-} = require('../models/pets.js');
+  deletePetById
+} = require("../models/pets.js");
 
+const allOwnedPets = (req, res) => {
+  // console.log(req.params);
 
-const allOwnedPets = () => {
+  fetchPetsByOwnerId((err, petArray) => {
+    const findPets = petArray.filter(pet => pet.owner === req.params.owner);
+    const body = { Pets: findPets };
+    res.send(body);
+  });
+};
 
-}
-
-module.exports = { allOwnedPets }
+module.exports = { allOwnedPets };
